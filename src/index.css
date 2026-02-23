@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@keyframes colorCycle {
+  0% { color: hsl(0, 100%, 60%); text-shadow: 0 0 15px hsl(0, 100%, 60%); }
+  25% { color: hsl(90, 100%, 60%); text-shadow: 0 0 15px hsl(90, 100%, 60%); }
+  50% { color: hsl(180, 100%, 60%); text-shadow: 0 0 15px hsl(180, 100%, 60%); }
+  75% { color: hsl(270, 100%, 60%); text-shadow: 0 0 15px hsl(270, 100%, 60%); }
+  100% { color: hsl(360, 100%, 60%); text-shadow: 0 0 15px hsl(360, 100%, 60%); }
+}
+
+@keyframes bgCycle {
+  0% { background-color: hsl(0, 100%, 60%); }
+  25% { background-color: hsl(90, 100%, 60%); }
+  50% { background-color: hsl(180, 100%, 60%); }
+  75% { background-color: hsl(270, 100%, 60%); }
+  100% { background-color: hsl(360, 100%, 60%); }
+}
+
+.animate-color-cycle {
+  animation: colorCycle 5s linear infinite;
+}
+
+.animate-bg-cycle {
+  animation: bgCycle 5s linear infinite;
+}
